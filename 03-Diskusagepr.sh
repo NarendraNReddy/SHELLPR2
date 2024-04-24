@@ -16,4 +16,4 @@ do
     
 done <<<$DISK_USAGE
 
-echo -e "$MESSAGE" | mail -s "message" narendra.h1b@gmail.com
+echo -e "$MESSAGE" | mail -s "disk usage" narendra.h1b@gmail.com
