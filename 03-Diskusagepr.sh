@@ -2,6 +2,7 @@
 
 DISK_USAGE=$(df -hT | grep xfs)
 THRESHOLD=6 
+MESSAGE=""
 
 while IFS= read -r line 
 do 
@@ -10,9 +11,9 @@ do
     
     if [ $USAGE -ge $THRESHOLD ];
     then
-        echo "$FOLDER exceeds the $THRESHOLD,current usage :$USAGE" 
+        $MESSAGE+="$FOLDER exceeds the $THRESHOLD,current usage :$USAGE \n" 
     fi 
     
 done <<<$DISK_USAGE
 
-echo "This is a test mail & Date $(date)" | mail -s "message" narendra.h1b@gmail.com
+echo -e "$MESSAGE" | mail -s "message" narendra.h1b@gmail.com
