@@ -14,3 +14,5 @@ do
     fi 
     
 done <<<$DISK_USAGE
+
+echo "This is a test mail & Date $(date)" | mail -s "message" info@joindevops.com
