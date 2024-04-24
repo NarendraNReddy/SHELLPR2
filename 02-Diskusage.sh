@@ -6,5 +6,5 @@ THRESHOLD=6
 
 while IFS= read -r line 
 do 
-    echo  $DISK_USAGE
+    echo  $line
 done <<<$DISK_USAGE
