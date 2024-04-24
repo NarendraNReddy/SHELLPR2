@@ -15,4 +15,4 @@ do
     
 done <<<$DISK_USAGE
 
-echo "This is a test mail & Date $(date)" | mail -s "message" info@joindevops.com
+echo "This is a test mail & Date $(date)" | mail -s "message" narendra.h1b@gmail.com
